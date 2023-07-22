@@ -13,7 +13,6 @@ const Header = () => {
                     <LogoImg src={RMDBlogo} alt="rmdb-logo" />
                 </a>
 
-
                 <TMDBImg src={TMDBLogo} alt="tmdb-logo"></TMDBImg>
             </Content>
         </Wrapper>
