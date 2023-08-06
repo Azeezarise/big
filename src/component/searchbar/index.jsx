@@ -1,9 +1,7 @@
 import React, {useState,useEffect,useRef} from "react";
-// import PropTypes from 'prop-types';
 
 //import
-
-import searchIcon from '../images/search-icon.svg'
+import searchIcon from '../../images/search-icon.svg';
 
 //styles
 import {Wrapper,Content} from './SearchBar.styles';
@@ -24,14 +22,12 @@ const SearchBar = ({setSearchTerm}) => {
 
         return () => clearTimeout(timer);
     },[setSearchTerm,state]);
-   
 
     return (
         <Wrapper>
             <Content>
-           
                 <img src={searchIcon} alt="search-icon" />
-                
+
                 <input
                   type="text"
                   placeholder="Search Movie"
@@ -45,8 +41,5 @@ const SearchBar = ({setSearchTerm}) => {
    
 }
 
-// SearchBar.propTypes = {
-//     setSearchTerm: PropTypes.string
-// }
 
 export default SearchBar;
